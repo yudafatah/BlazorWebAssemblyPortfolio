@@ -1,12 +1,10 @@
+using Fluxor;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
+using Toolbelt.Blazor.Extensions.DependencyInjection;
 
 namespace Portfolio
 {
@@ -16,6 +14,11 @@ namespace Portfolio
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
+            // Register "Head Element Helper" service
+            builder.Services.AddHeadElementHelper();
+            // Adds all Fluxor dependencies, and scans the specified assembly for any Fluxor related code (states, reducers, etc)
+            builder.Services.AddFluxor(o =>
+                o.ScanAssemblies(typeof(Program).Assembly));
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 

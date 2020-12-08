@@ -1,4 +1,12 @@
-﻿@page "/counter"
+﻿@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+@page "/counter"
+<Title>@_metaState.Value._metaTag.Title</Title>
+<Meta Property="ogp:title" Content="@_metaState.Value._metaTag.Title" />
+<Meta Property="ogp:description" Content="@_metaState.Value._metaTag.Description" />
+<Meta Property="ogp:keywords" Content="@_metaState.Value._metaTag.Keywords" />
+<Meta Property="ogp:author" Content="@_metaState.Value._metaTag.Author" />
+
+@*<Link Rel="icon" Href="@($"/favicons/{GetFaviconName()}")" />*@
 
 <h1>Counter</h1>
 
