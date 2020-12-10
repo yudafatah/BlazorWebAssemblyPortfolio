@@ -1,6 +1,7 @@
 using Fluxor;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Portfolio.Services;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -19,6 +20,8 @@ namespace Portfolio
             // Adds all Fluxor dependencies, and scans the specified assembly for any Fluxor related code (states, reducers, etc)
             builder.Services.AddFluxor(o =>
                 o.ScanAssemblies(typeof(Program).Assembly));
+            // Add browser service
+            builder.Services.AddScoped<BrowserService>();
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 

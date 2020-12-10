@@ -65,7 +65,9 @@
 
     <style>
         #mainDiv {
-            Width: 100%;
+            width: 100%;
+            height: 100%;
+            background-color:white;
         }
 
         #centeredImage {
@@ -106,9 +108,20 @@
     -->
     <script src="js/scripts.js"></script>
 
+    <!--get window dimension-->
+    <script type="text/javascript">
+        window.getDimensions = function () {
+            return {
+                width: window.innerWidth,
+                height: window.innerHeight
+            };
+        };
+    </script>
+
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
     <script src="_content/Fluxor.Blazor.Web/scripts/index.js"></script>
+    <script src="js/anchorLink.js"></script>
 </body>
 
 </html>
