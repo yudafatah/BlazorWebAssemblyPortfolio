@@ -64,24 +64,36 @@
     <link rel="shortcut icon" href="images/favicons/favicon.ico">
 
     <style>
-        #mainDiv {
+        .containerLoading {
             width: 100%;
             height: 100%;
-            background-color:white;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: lightgrey;
         }
 
-        #centeredImage {
-            margin-left: auto;
-            margin-right: auto;
-            float: none;
+        .spinner {
+            max-width: 100px;
+            max-height: 100px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
+
     </style>
 </head>
 
 <body>
     <div id="app">
-        <div id="mainDiv">
-            <img id="centerdImage" src="images/Triangles-1s-200px.gif" />
+        <div class="containerLoading">
+            <img class="spinner" src="images/Triangles-1s-200px.gif" />
         </div>
     </div>
     <div id="blazor-error-ui">
