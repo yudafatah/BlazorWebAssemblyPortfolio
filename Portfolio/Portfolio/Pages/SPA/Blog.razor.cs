@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using Blazored.Modal.Services;
+using Microsoft.AspNetCore.Components;
 
 namespace Portfolio.Pages.SPA
 {
@@ -6,5 +7,7 @@ namespace Portfolio.Pages.SPA
     {
         [Parameter]
         public string ClassName { get; set; }
+
+        [CascadingParameter] public IModalService Modal { get; set; }
     }
 }

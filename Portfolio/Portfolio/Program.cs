@@ -1,3 +1,4 @@
+using Blazored.Modal;
 using Fluxor;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +21,8 @@ namespace Portfolio
             // Adds all Fluxor dependencies, and scans the specified assembly for any Fluxor related code (states, reducers, etc)
             builder.Services.AddFluxor(o =>
                 o.ScanAssemblies(typeof(Program).Assembly));
+            // add blazored Modal
+            builder.Services.AddBlazoredModal();
             // Add browser service
             builder.Services.AddScoped<BrowserService>();
 

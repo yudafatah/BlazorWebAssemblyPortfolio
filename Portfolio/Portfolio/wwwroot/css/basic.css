@@ -901,6 +901,28 @@ textarea.error::-webkit-input-placeholder {
 	animation-name: FlipIn;
 }
 
+.m-content {
+	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	height: 60vh;
+	background-color: black;
+	border-radius: 12px;
+	border: 1px solid #fff;
+	padding: 0.5rem;
+	z-index: 102;
+	box-shadow: 0 2px 2px rgba(0,0,0,.75);
+	overflow-y:scroll;
+}
+
+.m-content .modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
 @-webkit-keyframes FlipIn {
 	from {
 		-webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);

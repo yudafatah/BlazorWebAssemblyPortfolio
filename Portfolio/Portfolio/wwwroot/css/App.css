@@ -1,0 +1,27 @@
+﻿.blazored-modal-close {
+    padding: 1rem !important;
+    margin: -1rem -1rem -1rem auto !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    -webkit-appearance: none !important;
+    cursor: pointer !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: black !important;
+}
+
+.CustomModalStyle ul{
+    color:black !important;
+}
+
+.CustomModalStyle a{
+    color:black !important;
+}
+
+.CustomModalStyle .blog-detail{
+    color:#888 !important;
+}
+
+.CustomModalStyle h1{
+    color:black !important;
+}

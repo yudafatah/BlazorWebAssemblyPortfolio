@@ -1,6 +1,8 @@
 ﻿@page "/fetchdata"
+
 @inject HttpClient Http
 
+@inherits ViewBase
 
 <h1>Weather forecast</h1>
 
@@ -38,7 +40,7 @@ else
 @code {
     private WeatherForecast[] forecasts;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnRenderAsync(bool firstRender)
     {
         forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
     }
