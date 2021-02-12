@@ -1,4 +1,5 @@
 using Blazored.Modal;
+using BlazorStrap;
 using Fluxor;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,6 +24,8 @@ namespace Portfolio
                 o.ScanAssemblies(typeof(Program).Assembly));
             // add blazored Modal
             builder.Services.AddBlazoredModal();
+            // add BlazorStrap CSS
+            builder.Services.AddBootstrapCss();
             // Add browser service
             builder.Services.AddScoped<BrowserService>();
 

@@ -2,23 +2,23 @@
 <div class="CustomModalStyle" style="color:black !important">
 
     <!-- Image Slider -->
-            <BlazorStrap.BSCarousel NumberOfItems="@items.Count" style="text-align:center !important">
-                <div class="carousel-inner">
-                    @for (int i = 0; i < items.Count; i++)
-                    {
-                        <BlazorStrap.BSCarouselItem Src="@items[i].Source" Alt="@items[i].Alt"
-                                                    style="width:100%; height:auto" />
-                    }
-                </div>
-                <BlazorStrap.BSCarouselControl CarouselDirection="BlazorStrap.CarouselDirection.Previous" NumberOfItems="@items.Count" />
-                <BlazorStrap.BSCarouselControl CarouselDirection="BlazorStrap.CarouselDirection.Next" NumberOfItems="@items.Count" />
-            </BlazorStrap.BSCarousel>
+    <BlazorStrap.BSCarousel NumberOfItems="@items.Count" style="text-align:center !important">
+        <div class="carousel-inner">
+            @for (int i = 0; i < items.Count; i++)
+            {
+                <BlazorStrap.BSCarouselItem Src="@items[i].Source" Alt="@items[i].Alt"
+                                            style="width:100%; height:auto" />
+            }
+        </div>
+        <BlazorStrap.BSCarouselControl CarouselDirection="BlazorStrap.CarouselDirection.Previous" NumberOfItems="@items.Count" />
+        <BlazorStrap.BSCarouselControl CarouselDirection="BlazorStrap.CarouselDirection.Next" NumberOfItems="@items.Count" />
+    </BlazorStrap.BSCarousel>
 
     <div class="blog-content">
         <br /><br />
         <p>
-            EWS is Banking application to assess wether the customer will failure to repay a debt or is a superior customer.
-            In this apps has approval flow, reporting, tracking, and tracing.
+            Digisales is Banking application for sales activity automation such as customer management, monitor all sales activity until debt collection,
+            and open account any kind of products.
         </p><br />
         <div class="row grid-items border-line-v">
             <div class="col col-d-3 col-t-3 col-m-12 grid-item photo border-line-h"
@@ -26,21 +26,24 @@
                 <b>Platform</b>
                 <ul class="list-style" style="color:black !important">
                     <li>Web</li>
+                    <li>Mobile</li>
                 </ul><br />
             </div>
             <div class="col col-d-3 col-t-3 col-m-12 grid-item photo border-line-h"
                  style="border-top: 1px solid #6c757d !important; border-right: 1px solid #ffce7a !important">
                 <b>My Role</b>
                 <ul class="list-style" style="color:black !important">
-                    <li>Full Stack Developer</li>
+                    <li>Backend Developer</li>
                 </ul><br />
             </div>
             <div class="col col-d-3 col-t-3 col-m-12 grid-item photo border-line-h"
                  style="border-top: 1px solid #6c757d !important">
                 <b>Tech Stack</b>
                 <ul class="list-style" style="color:black !important">
-                    <li>.Net Core MVC</li>
+                    <li>.Net Core</li>
+                    <li>Swagger</li>
                     <li>SQL Server</li>
+                    <li>Banking SOA Integration</li>
                     <li>IIS Web Server</li>
                 </ul>
             </div>

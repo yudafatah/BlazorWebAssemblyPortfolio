@@ -1,12 +1,21 @@
 ﻿@inherits LayoutComponentBase
+@inject IBootstrapCss BootstrapCSS
 
 <!--<div class="page">-->
-    @*<div class="sidebar">
-            <NavMenu />
-        </div>*@
+@*<div class="sidebar">
+        <NavMenu />
+    </div>*@
 
-    <!--<div class="main">
+<!--<div class="main">
 
     </div>
 </div>-->
 @Body
+
+@code{
+    // request and generate latest bootstrap with BlazorStrap api
+    protected override async Task OnInitializedAsync()
+    {
+        await BootstrapCSS.SetBootstrapCss();
+    }
+}

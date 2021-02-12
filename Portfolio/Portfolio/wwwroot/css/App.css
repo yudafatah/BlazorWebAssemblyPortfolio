@@ -25,3 +25,7 @@
 .CustomModalStyle h1{
     color:black !important;
 }
+
+.blazored-modal-title {
+    color: #ff9800 !important;
+}

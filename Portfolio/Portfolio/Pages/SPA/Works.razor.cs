@@ -2,7 +2,6 @@
 using Blazored.Modal.Services;
 using Microsoft.AspNetCore.Components;
 using Portfolio.Pages.Contents.Works;
-using System.Collections.Generic;
 
 namespace Portfolio.Pages.SPA
 {
@@ -22,27 +21,18 @@ namespace Portfolio.Pages.SPA
                 FocusFirstElement = true
             };
 
-            Modal.Show<EWS>("", opt);
+            Modal.Show<EWS>("Early Warning System", opt);
         }
 
-        // Image Slider
-        IList<Item> items = new List<Item>
+        void ShowModalDigisales()
         {
-            new Item
+            var opt = new ModalOptions()
             {
-                Alt="EWS",
-                Caption = "Early Warning System App",
-                Header="",
-                Source = ""
-            }
-        };
+                ContentScrollable = true,
+                FocusFirstElement = true
+            };
 
-        class Item
-        {
-            public string Source { get; set; } = "";
-            public string Alt { get; set; } = "";
-            public string Caption { get; set; } = "";
-            public string Header { get; set; } = "";
+            Modal.Show<Digisales>("Digisales", opt);
         }
     }
 }
