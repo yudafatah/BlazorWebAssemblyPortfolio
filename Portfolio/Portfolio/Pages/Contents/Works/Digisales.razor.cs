@@ -28,6 +28,13 @@ namespace Portfolio.Pages.Contents.Works
                 Caption = "Digisales 2",
                 Header="Digisales 2",
                 Source = "/images/works/DIGISALESMB.JPG"
+            },
+            new ImageSliderVM
+            {
+                Alt="Digisales3",
+                Caption = "Digisales 3",
+                Header="Digisales 3",
+                Source = "/images/works/DIGISALESMB1.JPG"
             }
         };
     }

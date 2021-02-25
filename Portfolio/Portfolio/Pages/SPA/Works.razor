@@ -1,39 +1,82 @@
-﻿
+﻿@inject HttpClient Http
+
 <div class="@ClassName" id="works-card">
     <div class="card-wrap">
 
-        
-            @*Works*@
-        
+
+        @*Works*@
+
         <div class="content works">
 
-             @*title*@ 
+            @*title*@
             <div class="title">Recent Works</div>
 
-             @*filters*@ 
+            @*filters*@
             <div class="filter-menu filter-button-group">
                 <div class="f_btn active">
                     <label><input type="radio" name="fl_radio" value="grid-item" />All</label>
                 </div>
                 @*<div class="f_btn">
-                    <label><input type="radio" name="fl_radio" value="photo" />Photo</label>
-                </div>
-                <div class="f_btn">
-                    <label><input type="radio" name="fl_radio" value="video" />Video</label>
-                </div>
-                <div class="f_btn">
-                    <label><input type="radio" name="fl_radio" value="music" />Music</label>
-                </div>
-                <div class="f_btn">
-                    <label><input type="radio" name="fl_radio" value="design" />Design</label>
-                </div>*@
+                        <label><input type="radio" name="fl_radio" value="photo" />Photo</label>
+                    </div>
+                    <div class="f_btn">
+                        <label><input type="radio" name="fl_radio" value="video" />Video</label>
+                    </div>
+                    <div class="f_btn">
+                        <label><input type="radio" name="fl_radio" value="music" />Music</label>
+                    </div>
+                    <div class="f_btn">
+                        <label><input type="radio" name="fl_radio" value="design" />Design</label>
+                    </div>*@
             </div>
 
-             @*content*@ 
+            @*content*@
             <div class="row grid-items border-line-v">
+                @if (works == null)
+                {
+                    <p><em>Data empty</em></p>
+                }
+                else
+                {
+                    foreach (var work in works)
+                    {
+                        <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+                            <div class="box-item">
+                                <div class="image">
+                                    <a href="#" @onclick="@(e=>ShowModal(work.appName,work.displayName))" class="has-popup-media">
+                                        <img src="@work.urlImg" alt="@work.alt" />
+                                        <span class="info">
+                                            <span class="ion ion-images"></span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="desc">
+                                    <a href="#" @onclick="@(e=>ShowModal(work.appName,work.displayName))" class="name has-popup-media">@work.displayName</a>
+                                    <div class="category">@work.category</div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
 
-                 @*work item photo*@ 
-                <div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
+                <!--<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+                    <div class="box-item">
+                        <div class="image">
+                            <a href="#" @onclick="ShowModalCSMT" class="has-popup-media">
+                                <img src="images/works/CSMT.JPG" alt="" />
+                                <span class="info">
+                                    <span class="ion ion-images"></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <a href="#" @onclick="ShowModalCSMT" class="name has-popup-media">Corporate Strategy Monitoring Tools</a>
+                            <div class="category">Web App</div>
+                        </div>
+                    </div>
+                </div>-->
+                @*work item photo*@
+                <!--<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
                     <div class="box-item">
                         <div class="image">
                             <a href="#" @onclick="ShowModalEWS" class="has-popup-image">
@@ -48,28 +91,34 @@
                             <div class="category">Web App</div>
                         </div>
                     </div>
-                </div>
-
-                 @*work item design*@ 
-                <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                    <div class="box-item">
-                        <div class="image">
-                            <a href="#" @onclick="ShowModalDigisales" class="has-popup-media">
-                                <img src="images/works/DIGISALESMB.JPG" alt="" />
-                                <span class="info">
-                                    <span class="ion ion-images"></span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="desc">
-                            <a href="#" @onclick="ShowModalDigisales" class="name has-popup-media">Digisales</a>
-                            <div class="category">Api Services</div>
-                        </div>
-                    </div>
-                </div>
+                </div>-->
 
                 <div class="clear"></div>
             </div>
+
+            <BSPagination>
+                <BSPaginationItem IsDisabled="@PrevIsDisabled">
+                    <BSPaginationLink Href="#" @onclick="@(e=>OnChangePage(currentPage-1))" PaginationLinkType="PaginationLinkType.PreviousIcon" />
+                </BSPaginationItem>
+                @for (int i = 0; i < totalPage; i++)
+                {
+                    if (currentPage - 1 == i)
+                    {
+                        <BSPaginationItem IsActive="true">
+                            <BSPaginationLink Href="#">@(i+1)</BSPaginationLink>
+                        </BSPaginationItem>
+                    }
+                    else
+                    {
+                        <BSPaginationItem>
+                            <BSPaginationLink Href="#" @onclick="@(e=>OnChangePage(i+1))">@(i+1)</BSPaginationLink>
+                        </BSPaginationItem>
+                    }
+                }
+                <BSPaginationItem IsDisabled="@NextIsDisabled">
+                    <BSPaginationLink Href="#" @onclick="@(e=>OnChangePage(currentPage+1))" PaginationLinkType="PaginationLinkType.NextIcon" />
+                </BSPaginationItem>
+            </BSPagination>
 
         </div>
 

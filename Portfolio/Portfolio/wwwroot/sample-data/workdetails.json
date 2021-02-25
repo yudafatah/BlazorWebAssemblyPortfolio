@@ -1,0 +1,20 @@
+[
+  {
+    "AppName": "EWS",
+    "CreatedOn": "February 2020",
+    "Stage": "Phase 4",
+    "Description": "EWS is Banking application to assess wether the customer will failure to repay a debt or is a superior customer. In this apps has approval flow, reporting, tracking, and tracing.",
+    "Platform": "Web",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Core MVC,SQL Server,IIS Web Server"
+  },
+  {
+    "AppName": "DIGISALES",
+    "CreatedOn": "August 2020 - Oktober 2020",
+    "Stage": "Phase 1",
+    "Description": "Digisales is Banking application for sales activity automation such as customer management, monitoring all sales activity until debt collection, and open account any kind of products.",
+    "Platform": "Web,Mobile",
+    "Role": "Back End Developer,Back End Lead",
+    "TechStack": ".Net Core,Swagger,SQL Server,Agile,Banking SOA Integration,IIS Web Server"
+  }
+]

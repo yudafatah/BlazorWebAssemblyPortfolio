@@ -1,0 +1,30 @@
+[
+  {
+    "AppName": "DIGISALES",
+    "Alt": "Digisales",
+    "Caption": "Digisales",
+    "Header": "Digisales",
+    "Source": "/images/works/digisales.JPG"
+  },
+  {
+    "AppName": "DIGISALES",
+    "Alt": "Digisales 1",
+    "Caption": "Digisales 1",
+    "Header": "Digisales 1",
+    "Source": "/images/works/DIGISALES1.JPG"
+  },
+  {
+    "AppName": "DIGISALES",
+    "Alt": "Digisales 2",
+    "Caption": "Digisales 2",
+    "Header": "Digisales 2",
+    "Source": "/images/works/DIGISALESMB.JPG"
+  },
+  {
+    "AppName": "DIGISALES",
+    "Alt": "Digisales 3",
+    "Caption": "Digisales 3",
+    "Header": "Digisales 3",
+    "Source": "/images/works/DIGISALESMB1.JPG"
+  }
+]

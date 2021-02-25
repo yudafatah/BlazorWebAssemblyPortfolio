@@ -2,6 +2,14 @@
 using Blazored.Modal.Services;
 using Microsoft.AspNetCore.Components;
 using Portfolio.Pages.Contents.Works;
+using Portfolio.ViewModels;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http.Json;
+using System;
+using Fluxor;
+using Portfolio.Stores.ModalItems;
 
 namespace Portfolio.Pages.SPA
 {
@@ -13,7 +21,7 @@ namespace Portfolio.Pages.SPA
         // call Modal
         [CascadingParameter] public IModalService Modal { get; set; }
 
-        void ShowModalEWS()
+        void ShowModal(string appName, string displayName)
         {
             var opt = new ModalOptions()
             {
@@ -21,18 +29,83 @@ namespace Portfolio.Pages.SPA
                 FocusFirstElement = true
             };
 
-            Modal.Show<EWS>("Early Warning System", opt);
+            ChangeModalState(appName);
+
+            Modal.Show<WorkDetails>(displayName, opt);
         }
 
-        void ShowModalDigisales()
-        {
-            var opt = new ModalOptions()
-            {
-                ContentScrollable = true,
-                FocusFirstElement = true
-            };
+        // fetch list data works
+        public List<WorksVM> works;
 
-            Modal.Show<Digisales>("Digisales", opt);
+        // pagination
+        private decimal pageSize = 8;
+        public int currentPage = 1;
+        public bool PrevIsDisabled = false;
+        public bool NextIsDisabled = false;
+        public int totalPage = 1;
+
+        public decimal test = 0;
+        public decimal test1 = 0;
+
+        private void SetPagination(decimal DataLength)
+        {
+            if (Convert.ToDecimal(DataLength / pageSize) < 1 || currentPage == 1)
+            {
+                PrevIsDisabled = true;
+            }
+            else
+            {
+                PrevIsDisabled = false;
+            }
+
+            if (Convert.ToDecimal(DataLength / pageSize) < 1 || Convert.ToDecimal(DataLength / pageSize) > (currentPage - 1))
+            {
+                NextIsDisabled = true;
+            }
+            else
+            {
+                NextIsDisabled = false;
+            }
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            // fetch list data works
+            var res = await Http.GetFromJsonAsync<WorksVM[]>("sample-data/works.json");
+            works = res.OrderBy(x => x.orderNo).Take(Convert.ToInt32(pageSize)).ToList();
+
+            // get total pages
+            totalPage = Convert.ToInt32(Math.Ceiling(Convert.ToDecimal(res.Length / pageSize)));
+
+            // change pagination state
+            SetPagination(Convert.ToDecimal(res.Length));
+        }
+
+        private async Task OnChangePage(int page)
+        {
+            // change page state
+            currentPage = page;
+
+            // fetch list data works
+            var res = await Http.GetFromJsonAsync<WorksVM[]>("sample-data/works.json");
+            works = res.OrderBy(x => x.orderNo).Skip((page - 1) * Convert.ToInt32(pageSize)).Take(Convert.ToInt32(pageSize)).ToList();
+
+            // change pagination state
+            SetPagination(Convert.ToDecimal(res.Length));
+        }
+
+        // Modal state management
+        [Inject]
+        public IDispatcher _dispatcher { get; set; }
+
+        private void ChangeModalState(string appName)
+        {
+            var data = new AppNameVM()
+            {
+                appName = appName
+            };
+            _dispatcher.Dispatch(new ModalPageChangeAction(data));
+
         }
     }
 }

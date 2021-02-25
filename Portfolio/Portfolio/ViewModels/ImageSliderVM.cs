@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Portfolio.ViewModels
+﻿namespace Portfolio.ViewModels
 {
     public class ImageSliderVM
     {
@@ -11,5 +6,6 @@ namespace Portfolio.ViewModels
             public string Alt { get; set; } = "";
             public string Caption { get; set; } = "";
             public string Header { get; set; } = "";
+            public string AppName { get; set; } = "";
     }
 }

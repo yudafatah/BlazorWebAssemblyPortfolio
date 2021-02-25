@@ -1,0 +1,122 @@
+[
+  {
+    "appName": "DIGISALES",
+    "urlImg": "images/works/DIGISALESMB.JPG",
+    "alt": "Integrated Sales Tools",
+    "orderNo": 2,
+    "displayName": "Integrated Sales Tools",
+    "category": "Api Services"
+  },
+  {
+    "appName": "CSMT",
+    "urlImg": "images/works/CSMT.JPG",
+    "alt": "Corporate Strategy Monitoring Tools",
+    "orderNo": 5,
+    "displayName": "Corporate Strategy Monitoring Tools",
+    "category": "Web App"
+  },
+  {
+    "appName": "EWS",
+    "urlImg": "images/works/EWS.JPG",
+    "alt": "Early Warning System",
+    "orderNo": 6,
+    "displayName": "Early Warning System",
+    "category": "Web App"
+  },
+  {
+    "appName": "BRANCHNAV",
+    "urlImg": "images/works/BRANCHNAV.JPG",
+    "alt": "Branch Navigation",
+    "orderNo": 4,
+    "displayName": "Branch Navigation",
+    "category": "Api Services"
+  },
+  {
+    "appName": "BAMSHOME",
+    "urlImg": "images/works/BAMSHomeJPG.JPG",
+    "alt": "Business Activity Management Tools",
+    "orderNo": 3,
+    "displayName": "Business Activity Management Tools Home (Portal SSO)",
+    "category": "Web App"
+  },
+  {
+    "appName": "CPR",
+    "urlImg": "images/works/CPR.JPG",
+    "alt": "Credit Profitability Review",
+    "orderNo": 1,
+    "displayName": "Credit Profitability Review",
+    "category": "Api Services"
+  },
+  {
+    "appName": "AWF",
+    "urlImg": "images/works/AWFJPG.JPG",
+    "alt": "ARTWORKFAIRS",
+    "orderNo": 7,
+    "displayName": "ARTWORKFAIRS",
+    "category": "Api Services"
+  },
+  {
+    "appName": "EOFFICE",
+    "urlImg": "images/works/default.jpg",
+    "alt": "E-Office",
+    "orderNo": 8,
+    "displayName": "E-Office",
+    "category": "Web App"
+  },
+  {
+    "appName": "PORTFOLIO",
+    "urlImg": "images/works/Portfolio.JPG",
+    "alt": "Yuda Fatah Portfolio Website",
+    "orderNo": 9,
+    "displayName": "Yuda Fatah Portfolio Website",
+    "category": "Web App"
+  },
+  {
+    "appName": "GOTRAVEL",
+    "urlImg": "images/works/GoTravel.JPG",
+    "alt": "BNI Travel",
+    "orderNo": 10,
+    "displayName": "BNI Travel",
+    "category": "Api Services"
+  },
+  {
+    "appName": "KTPREADER",
+    "urlImg": "images/works/default.jpg",
+    "alt": "Biometric Integrated System",
+    "orderNo": 11,
+    "displayName": "Biometric Integrated System",
+    "category": "Web App"
+  },
+  {
+    "appName": "MUDIKCSR",
+    "urlImg": "images/works/default.jpg",
+    "alt": "Portal Mudik Corporate Social Responsibility",
+    "orderNo": 12,
+    "displayName": "Portal Mudik Corporate Social Responsibility",
+    "category": "Web App"
+  },
+  {
+    "appName": "DIGICATALOG",
+    "urlImg": "images/works/default.jpg",
+    "alt": "Collateral Auction Apllication",
+    "orderNo": 13,
+    "displayName": "Collateral Auction Apllication",
+    "category": "Web Service Security"
+  },
+  {
+    "appName": "NFCABSTEEISM",
+    "urlImg": "images/works/default.jpg",
+    "alt": "Business Meeting Absenteeism using Smart Watch",
+    "orderNo": 14,
+    "displayName": "Business Meeting Absenteeism using Smart Watch",
+    "category": "Web App, Api Services, Mobile App"
+  },
+  {
+    "appName": "SMARTCA",
+    "urlImg": "images/works/default.jpg",
+    "alt": "Credit Application",
+    "orderNo": 15,
+    "displayName": "Credit Application",
+    "category": "Web App"
+  }
+]

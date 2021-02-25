@@ -29,3 +29,31 @@
 .blazored-modal-title {
     color: #ff9800 !important;
 }
+
+.col{
+    flex-basis:auto !important;
+}
+
+.pagination{
+    display:inline-flex !important;
+}
+
+.blazored-modal-container {
+    display: flex;
+    position: fixed;
+    top: -9px !important;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+@media (max-width: 560px) {
+    .blazored-modal-container {
+        display: flex;
+        position: fixed;
+        top: 55px !important;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+}
