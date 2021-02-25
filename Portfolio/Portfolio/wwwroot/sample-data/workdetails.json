@@ -16,5 +16,14 @@
     "Platform": "Web,Mobile",
     "Role": "Back End Developer,Back End Lead",
     "TechStack": ".Net Core,Swagger,SQL Server,Agile,Banking SOA Integration,IIS Web Server"
+  },
+  {
+    "AppName": "CSMT",
+    "CreatedOn": "July 2019",
+    "Stage": "Phase 2",
+    "Description": "CSMT is a Banking application for monitoring business planning until realization. In this app has approval flows, reporting, and tracking business plan.",
+    "Platform": "Web",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Core MVC,SQL Server,IIS Web Server"
   }
 ]

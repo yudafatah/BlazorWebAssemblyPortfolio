@@ -95,32 +95,21 @@
 
                 <div class="clear"></div>
             </div>
-
-            <BSPagination>
+            <br/>
+            <BSPagination Alignment="Alignment.Center">
                 <BSPaginationItem IsDisabled="@PrevIsDisabled">
                     <BSPaginationLink Href="#" @onclick="@(e=>OnChangePage(currentPage-1))" PaginationLinkType="PaginationLinkType.PreviousIcon" />
                 </BSPaginationItem>
-                @for (int i = 0; i < totalPage; i++)
+                @foreach (var i in pages)
                 {
-                    if (currentPage - 1 == i)
-                    {
-                        <BSPaginationItem IsActive="true">
-                            <BSPaginationLink Href="#">@(i+1)</BSPaginationLink>
-                        </BSPaginationItem>
-                    }
-                    else
-                    {
-                        <BSPaginationItem>
-                            <BSPaginationLink Href="#" @onclick="@(e=>OnChangePage(i+1))">@(i+1)</BSPaginationLink>
-                        </BSPaginationItem>
-                    }
+                    <BSPaginationItem IsActive="@(i == currentPage)">
+                        <BSPaginationLink Href="#" @onclick="@(e=>OnChangePage(i))">@i</BSPaginationLink>
+                    </BSPaginationItem>
                 }
                 <BSPaginationItem IsDisabled="@NextIsDisabled">
                     <BSPaginationLink Href="#" @onclick="@(e=>OnChangePage(currentPage+1))" PaginationLinkType="PaginationLinkType.NextIcon" />
                 </BSPaginationItem>
             </BSPagination>
-
         </div>
-
     </div>
 </div>

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Components;
 using Portfolio.Stores.ModalItems;
 using Portfolio.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Json;
@@ -18,13 +19,16 @@ namespace Portfolio.Pages.Contents.Works
         private IState<ModalState> _modalState { get; set; }
 
         // Image Slider
-        List<ImageSliderVM> items = new List<ImageSliderVM>();
+        IList<ImageSliderVM> items = new List<ImageSliderVM>();
 
         // Content
         WorkDetVM cnt = new WorkDetVM();
 
         protected override async Task OnInitializedAsync()
         {
+            // reset
+            items = new List<ImageSliderVM>();
+
             // fetch data workdetails
             var res = await Http.GetFromJsonAsync<WorkDetVM[]>("sample-data/workdetails.json");
             cnt = res.Where(x=>x.AppName.Equals(_modalState.Value._appName.appName.ToString().ToUpper()))
@@ -32,9 +36,14 @@ namespace Portfolio.Pages.Contents.Works
 
             // fetch list data Images
             var res1 = await Http.GetFromJsonAsync<ImageSliderVM[]>("sample-data/workDetImages.json");
-            items.AddRange(res1.Where(x => x.AppName.Equals(_modalState.Value._appName.appName.ToString().ToUpper())).ToList());
+            var res2 = res1.Where(x => x.AppName.Equals(_modalState.Value._appName.appName.ToString().ToUpper())).ToList();
 
-            StateHasChanged();
+            foreach(var i in res2)
+            {
+                items.Add(i);
+            }
+
+            //StateHasChanged();
         }
     }
 }

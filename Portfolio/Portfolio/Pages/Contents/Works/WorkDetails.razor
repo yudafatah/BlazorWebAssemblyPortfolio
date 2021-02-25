@@ -4,11 +4,21 @@
 
     <!-- Image Slider -->
     <BlazorStrap.BSCarousel NumberOfItems="@items.Count" style="text-align:center !important">
+        @if (items.Count < 1)
+        {
+
+        }
+        else
+        {
+            <BSCarouselIndicators NumberOfItems="@items.Count" />
+        }
         <div class="carousel-inner">
             @for (int i = 0; i < items.Count; i++)
             {
                 <BlazorStrap.BSCarouselItem Src="@items[i].Source" Alt="@items[i].Alt"
                                             style="width:100%; height:auto" />
+                @*<BSCarouselCaption CaptionText="@items[i].Caption" HeaderText="@items[i].Header" />*@
+                @*</BlazorStrap.BSCarouselItem>*@
             }
         </div>
         <BlazorStrap.BSCarouselControl CarouselDirection="BlazorStrap.CarouselDirection.Previous" NumberOfItems="@items.Count" />
@@ -24,7 +34,6 @@
             @cnt.Stage
         </BSBadge>
         <br /><br />
-        @_modalState.Value._appName.appName
         <p>
             @cnt.Description
         </p><br />

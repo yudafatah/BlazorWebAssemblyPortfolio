@@ -26,5 +26,19 @@
     "Caption": "Digisales 3",
     "Header": "Digisales 3",
     "Source": "/images/works/DIGISALESMB1.JPG"
+  },
+  {
+    "AppName": "EWS",
+    "Alt": "Early Warning System App",
+    "Caption": "Early Warning System App",
+    "Header": "EWS",
+    "Source": "/images/works/EWS.JPG"
+  },
+  {
+    "AppName": "CSMT",
+    "Alt": "Corporate Strategy Monitoring Tools",
+    "Caption": "Corporate Strategy Monitoring Tools",
+    "Header": "CSMT",
+    "Source": "/images/works/CSMT.JPG"
   }
 ]
