@@ -2,7 +2,7 @@
   {
     "AppName": "EWS",
     "CreatedOn": "February 2020",
-    "Stage": "Phase 4",
+    "Stage": "Ver. 4",
     "Description": "EWS is Banking application to assess wether the customer will failure to repay a debt or is a superior customer. In this apps has approval flow, reporting, tracking, and tracing.",
     "Platform": "Web",
     "Role": "Full Stack Developer",
@@ -11,19 +11,127 @@
   {
     "AppName": "DIGISALES",
     "CreatedOn": "August 2020 - Oktober 2020",
-    "Stage": "Phase 1",
+    "Stage": "Ver. 1",
     "Description": "Digisales is Banking application for sales activity automation such as customer management, monitoring all sales activity until debt collection, and open account any kind of products.",
     "Platform": "Web,Mobile",
-    "Role": "Back End Developer,Back End Lead",
-    "TechStack": ".Net Core,Swagger,SQL Server,Agile,Banking SOA Integration,IIS Web Server"
+    "Role": "Backend Developer,Backend Lead",
+    "TechStack": ".Net Core,Swagger,SQL Server,Agile,Banking SOA Integration,IIS Web Server,Microservices"
   },
   {
     "AppName": "CSMT",
     "CreatedOn": "July 2019",
-    "Stage": "Phase 2",
+    "Stage": "Ver. 1 & Ver. 2",
     "Description": "CSMT is a Banking application for monitoring business planning until realization. In this app has approval flows, reporting, and tracking business plan.",
     "Platform": "Web",
     "Role": "Full Stack Developer",
     "TechStack": ".Net Core MVC,SQL Server,IIS Web Server"
+  },
+  {
+    "AppName": "BRANCHNAV",
+    "CreatedOn": "Oktober 2020 - December 2020",
+    "Stage": "Ver. 1",
+    "Description": "BranchNav is a Banking application which shows important information includes business aspect, operational aspect, risk & compliance aspect, service aspect, premise aspect, and online supervision. The function of these aspects contained in a number of operational monitoring features, the modules are credit performance, distribution of people's business credit, outlet rental data, ATM rental data, audit findings, revitalization, FAQ, handbook, BRO data, and branch profile. ",
+    "Platform": "Web,Mobile",
+    "Role": "Backend Developer",
+    "TechStack": ".Net Core ,SQL Server,IIS Web Server"
+  },
+  {
+    "AppName": "BAMSHOME",
+    "CreatedOn": "Oktober 2020 - December 2020",
+    "Stage": "Ver. 1",
+    "Description": "BAMS Home is a web portal which has an authentication process which allows a user to access multiple applications with one set of login credentials (Single Sign-On). In BAMS Home users can access multiple resources (client app) connected to a local area network (LAN) or Internet. BAMS Home provides application management and user management,  with relevant roles user can manage applications (modules of business activity management tools) and users.",
+    "Platform": "Web",
+    "Role": "Backend Developer",
+    "TechStack": ".Net Core,Swagger,SQL Server,Agile,IIS Web Server,Microservices"
+  },
+  {
+    "AppName": "CPR",
+    "CreatedOn": "Oktober 2020 - December 2020",
+    "Stage": "Ver. 1",
+    "Description": "CPR is a Banking application (tools) for business to determine the profitability of each customer or segments of customers, by attributing profits and costs to each customer separately and simulate customer profits based on products which chosen, can be compared with customer historical data. CPR can be applied at the individual customer level or at the level of customer aggregates / groups",
+    "Platform": "Web",
+    "Role": "Backend Developer,Backend Lead",
+    "TechStack": ".Net Core,Swagger,SQL Server,Agile,IIS Web Server,Microservices"
+  },
+  {
+    "AppName": "AWF",
+    "CreatedOn": "2019",
+    "Stage": "Ver. 1",
+    "Description": "Artworkfairs.com (self-project) is a social commerce (C2C & B2C) platform which focus on digital art products. In Artworkfairs user can competed & get much rewards and badges, sell art, buy art, and recruit artist.",
+    "Platform": "Web,Mobile",
+    "Role": "Backend Developer,System Analyst,Product Owner",
+    "TechStack": ".Net Core(Migrate to Go),Swagger,SQL Server(Migrate to MongoDB),Heroku-SharedHosting,Microservices,gRPC"
+  },
+  {
+    "AppName": "EOFFICE",
+    "CreatedOn": "2019",
+    "Stage": "Enhancement leave request",
+    "Description": "e-Office is a electronic office application, facilitate employee to do office activity such as attendance, leave request, and more.",
+    "Platform": "Web,Mobile",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Framework MVC,SQL Server,IIS Web Server,Monolith,SOA Integration"
+  },
+  {
+    "AppName": "PORTFOLIO",
+    "CreatedOn": "2019",
+    "Stage": "Ver. 2 ",
+    "Description": "yudafatah.com is a portfolio and blog web app.",
+    "Platform": "Web,PWA",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Core(Migrate to Go),SQL Server(Migrate to MongoDB),Shared-Hosting,Microservices,ReactJs(Migrate to Blazor)"
+  },
+  {
+    "AppName": "GOTRAVEL",
+    "CreatedOn": "August 2020 (2 days dev only)",
+    "Stage": "Ver. 1 ",
+    "Description": "BNI Travel provide any banking and partners information such as merchant location and discount consist of hotel, restaurant, tourist attraction, and Micro small and Medium Enterprises.",
+    "Platform": "Mobile",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Core,SQL Server,IIS Web Server,Microservices,Swagger"
+  },
+  {
+    "AppName": "KTPREADER",
+    "CreatedOn": "January 2020",
+    "Stage": "Ver. 1 ",
+    "Description": "Biometric Integrated System Admin Web provides approvals process, tracing and tracking of enrollment and verification fingerprint sensors to hardware integrators, software and database.",
+    "Platform": "Web",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Core,SQL Server,IIS Web Server"
+  },
+  {
+    "AppName": "MUDIKCSR",
+    "CreatedOn": "2019",
+    "Stage": "Ver. 1 ",
+    "Description": "Mudik CSR is a web app, provides employee homecoming submission, reporting, tracing, and tracking.",
+    "Platform": "Web",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Core,SQL Server,IIS Web Server"
+  },
+  {
+    "AppName": "DIGICATALOG",
+    "CreatedOn": "2019",
+    "Stage": "Ver. 1 ",
+    "Description": "Increase Collateral Auction Apllication web service security in transfering data.",
+    "Platform": "Mobile",
+    "Role": "Backend Developer",
+    "TechStack": ".Net Core,SQL Server,IIS Web Server,Three Tier"
+  },
+  {
+    "AppName": "NFCABSTEEISM",
+    "CreatedOn": "2019",
+    "Stage": "Ver. 1 ",
+    "Description": "Attendance application is android based app using NFC sensor in smart watch and web based app for admin side to generate report.",
+    "Platform": "Mobile,Web",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Core,SQL Server,IIS Web Server,Three Tier, Kotlin, Android"
+  },
+  {
+    "AppName": "SMARTCA",
+    "CreatedOn": "2019",
+    "Stage": "Enhance Finance Part",
+    "Description": "Smart-CA (Credit Application) is an end-to-end application related to credit applications for medium and small segments. This application is used by RM (Relationship Managers) throughout Indonesia to process loans and analyze business debtors in the middle and small segments.",
+    "Platform": "Mobile,Web",
+    "Role": "Full Stack Developer",
+    "TechStack": ".Net Framework MVC,SQL Server,IIS Web Server,Two Tier, Monolith"
   }
 ]

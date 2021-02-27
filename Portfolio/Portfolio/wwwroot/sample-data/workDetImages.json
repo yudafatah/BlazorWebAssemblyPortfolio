@@ -40,5 +40,131 @@
     "Caption": "Corporate Strategy Monitoring Tools",
     "Header": "CSMT",
     "Source": "/images/works/CSMT.JPG"
+  },
+  {
+    "AppName": "BRANCHNAV",
+    "Alt": "Branch Navigation",
+    "Caption": "Branch Navigation",
+    "Header": "BRANCHNAV",
+    "Source": "/images/works/BRANCHNAV.JPG"
+  },
+  {
+    "AppName": "BRANCHNAV",
+    "Alt": "Branch Navigation Mobile",
+    "Caption": "Branch Navigation Mobile",
+    "Header": "BRANCHNAV Mobile",
+    "Source": "/images/works/BRANCHNAVMB.JPG"
+  },
+  {
+    "AppName": "BAMSHOME",
+    "Alt": "Business Activity Management Tools Login",
+    "Caption": "Business Activity Management Tools Login",
+    "Header": "BAMSHOME Login",
+    "Source": "/images/works/BAMSHomeJPG.JPG"
+  },
+  {
+    "AppName": "BAMSHOME",
+    "Alt": "Business Activity Management Tools UI",
+    "Caption": "Business Activity Management Tools UI",
+    "Header": "BAMSHOME UI",
+    "Source": "/images/works/BAMSHome1.JPG"
+  },
+  {
+    "AppName": "CPR",
+    "Alt": "Credit Profitability Review",
+    "Caption": "Credit Profitability Review",
+    "Header": "CPR",
+    "Source": "/images/works/CPR.JPG"
+  },
+  {
+    "AppName": "CPR",
+    "Alt": "Credit Profitability Review 1",
+    "Caption": "Credit Profitability Review 1",
+    "Header": "CPR 1",
+    "Source": "/images/works/CPR1.JPG"
+  },
+  {
+    "AppName": "AWF",
+    "Alt": "ARTWORKFAIRS",
+    "Caption": "ARTWORKFAIRS",
+    "Header": "AWF",
+    "Source": "/images/works/AWFJPG.JPG"
+  },
+  {
+    "AppName": "AWF",
+    "Alt": "ARTWORKFAIRS 1",
+    "Caption": "ARTWORKFAIRS 1",
+    "Header": "AWF 1",
+    "Source": "/images/works/AWF1.JPG"
+  },
+  {
+    "AppName": "EOFFICE",
+    "Alt": "E-Office",
+    "Caption": "E-Office",
+    "Header": "EOFFICE",
+    "Source": "/images/works/defaultweb.png"
+  },
+  {
+    "AppName": "PORTFOLIO",
+    "Alt": "Yuda Fatah Portfolio Website",
+    "Caption": "Yuda Fatah Portfolio Website",
+    "Header": "PORTFOLIO",
+    "Source": "/images/works/Portfolio.JPG"
+  },
+  {
+    "AppName": "GOTRAVEL",
+    "Alt": "BNI Travel",
+    "Caption": "BNI Travel",
+    "Header": "GOTRAVEL",
+    "Source": "/images/works/GoTravel.JPG"
+  },
+  {
+    "AppName": "KTPREADER",
+    "Alt": "Integrated Biometric System",
+    "Caption": "Integrated Biometric System",
+    "Header": "KTPREADER",
+    "Source": "/images/works/defaultweb.png"
+  },
+  {
+    "AppName": "MUDIKCSR",
+    "Alt": "Portal Mudik(homecoming) Corporate Social Responsibility",
+    "Caption": "Portal Mudik(homecoming) Corporate Social Responsibility",
+    "Header": "MUDIKCSR",
+    "Source": "/images/works/defaultweb.png"
+  },
+  {
+    "AppName": "DIGICATALOG",
+    "Alt": "Collateral Auction Apllication",
+    "Caption": "Collateral Auction Apllication",
+    "Header": "DIGICATALOG",
+    "Source": "/images/works/defaultweb.png"
+  },
+  {
+    "AppName": "NFCABSTEEISM",
+    "Alt": "Business Meeting Attendance using Smart Watch",
+    "Caption": "Business Meeting Attendance using Smart Watch",
+    "Header": "NFCABSTEEISM",
+    "Source": "/images/works/defaultweb.png"
+  },
+  {
+    "AppName": "SMARTCA",
+    "Alt": "Credit Application",
+    "Caption": "Credit Application",
+    "Header": "SMARTCA",
+    "Source": "/images/works/smartca.jpeg"
+  },
+  {
+    "AppName": "SMARTCA",
+    "Alt": "Credit Application Form",
+    "Caption": "Credit Application Form",
+    "Header": "SMARTCA Form",
+    "Source": "/images/works/smartca1.jpeg"
+  },
+  {
+    "AppName": "SMARTCA",
+    "Alt": "Credit Application Content",
+    "Caption": "Credit Application Content",
+    "Header": "SMARTCA Content",
+    "Source": "/images/works/smartca2.jpeg"
   }
 ]

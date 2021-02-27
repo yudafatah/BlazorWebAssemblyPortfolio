@@ -57,7 +57,7 @@
   },
   {
     "appName": "EOFFICE",
-    "urlImg": "images/works/default.jpg",
+    "urlImg": "images/works/defaultweb.png",
     "alt": "E-Office",
     "orderNo": 8,
     "displayName": "E-Office",
@@ -81,23 +81,23 @@
   },
   {
     "appName": "KTPREADER",
-    "urlImg": "images/works/default.jpg",
-    "alt": "Biometric Integrated System",
+    "urlImg": "images/works/defaultweb.png",
+    "alt": "Integrated Biometric System",
     "orderNo": 11,
-    "displayName": "Biometric Integrated System",
+    "displayName": "Integrated Biometric System",
     "category": "Web App"
   },
   {
     "appName": "MUDIKCSR",
-    "urlImg": "images/works/default.jpg",
-    "alt": "Portal Mudik Corporate Social Responsibility",
+    "urlImg": "images/works/defaultweb.png",
+    "alt": "Portal Mudik(homecoming) Corporate Social Responsibility",
     "orderNo": 12,
-    "displayName": "Portal Mudik Corporate Social Responsibility",
+    "displayName": "Portal Mudik(homecoming) Corporate Social Responsibility",
     "category": "Web App"
   },
   {
     "appName": "DIGICATALOG",
-    "urlImg": "images/works/default.jpg",
+    "urlImg": "images/works/defaultweb.png",
     "alt": "Collateral Auction Apllication",
     "orderNo": 13,
     "displayName": "Collateral Auction Apllication",
@@ -105,15 +105,15 @@
   },
   {
     "appName": "NFCABSTEEISM",
-    "urlImg": "images/works/default.jpg",
-    "alt": "Business Meeting Absenteeism using Smart Watch",
+    "urlImg": "images/works/defaultweb.png",
+    "alt": "Business Meeting Attendance using Smart Watch",
     "orderNo": 14,
-    "displayName": "Business Meeting Absenteeism using Smart Watch",
+    "displayName": "Business Meeting Attendance using Smart Watch",
     "category": "Web App, Api Services, Mobile App"
   },
   {
     "appName": "SMARTCA",
-    "urlImg": "images/works/default.jpg",
+    "urlImg": "images/works/smartca.jpeg",
     "alt": "Credit Application",
     "orderNo": 15,
     "displayName": "Credit Application",
